@@ -1,0 +1,1 @@
+Permite uma comunicação em tempo real com o navegador(back e front)

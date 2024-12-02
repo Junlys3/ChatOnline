@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body{
+    background-color: black;
+}
+
+.container{
+    background-color: burlywood;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.login{
+ background-color: rgb(49, 49, 49);
+ width: 50vw;
+ border-radius: 10px;
+ padding: 10px;
+ 
+}
+
+.login h2{
+    text-align: center;
+    font-size: 1.8em;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.login-form{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.login-input{
+
+    border: none;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: black;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 4px;
+}
+
+.login-input:focus{
+    outline: 2px solid white;
+}
+
+
+.login-button{
+    border: none;
+    border-radius: 4px;
+    padding: 15px;
+    font-size: 1.1em;
+}
+
+.login-button:hover{
+    background-color: rgb(160, 160, 160);
+}
+
+
+.chat{
+    background-color: rgb(44, 43, 43);
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    
+}
+
+.chat-mensagens{
+    
+    flex-grow: 1;
+    padding: 30px 30px 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+}
+
+
+.chat-form{
+    background-color: rgb(88, 87, 87);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: fixed;
+    bottom: 0;
+    padding: 15px 20px;
+    width: 100%;
+}
+
+.chat-input{
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    flex-grow: 1;
+    background-color: black;
+    outline: none;
+    color: white;
+}
+
+.chat-button{
+    background: none;
+    border: none;
+    color: white;
+    
+}
+
+.chat-button span{
+    font-size: 2.5em;
+}
+
+.chat-mensagens div{
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 250px;
+    font-size: 0.6;
+    line-height: 18px;
+}
+
+
+.myMessage{
+    background-color: rgb(150, 252, 130);
+    
+    color: black;
+    border-radius: 10px 10px 0px 10px;
+    align-self: flex-end;
+}
+
+.otherMessage{
+    background-color: white;
+    border-radius: 0px 10px 10px 10px;
+    align-self: flex-start;
+}
+
+.otherMessageSender{
+    display: block;
+    margin-bottom: 15px;
+    color: aqua;
+}
