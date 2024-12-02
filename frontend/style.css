@@ -153,4 +153,5 @@ body{
     display: block;
     margin-bottom: 15px;
     color: aqua;
+    align-self: flex-end;
 }
