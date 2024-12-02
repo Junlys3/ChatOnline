@@ -12,7 +12,7 @@ wss.on("connection", (ws)=>{
         console.log(mensagem.toString())
         
         wss.clients.forEach((client)=>{
-            client.send(mensagem.toString())
+            client.send(mensagem)
         })
     })
 

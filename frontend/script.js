@@ -50,10 +50,10 @@ const createMessageOther = (content, person, personColor) =>{
   span.classList.add("otherMessageSender")
   span.style.color = personColor
 
+  div.appendChild(span)
 
   span.innerHTML = person
 
-  div.appendChild(span)
 
 
   div.innerHTML += content
@@ -79,10 +79,12 @@ const messageProcess = (evt)=>{
 
 
  if(useridd == user.id){
+  console.log(user.id)
   const selfreturn = createMessageSelf(usercontent)
    chatmensagens.appendChild(selfreturn)
   
  }else{
+   console.log("t")
    const otherreturn = createMessageOther(usercontent, usernamee, usercolorr)
    chatmensagens.appendChild(otherreturn)
  }
@@ -98,7 +100,7 @@ const messageProcess = (evt)=>{
 
 const SubmitFormLogin = (event) =>{
   event.preventDefault()
-  user.id = Symbol()
+  user.id = crypto.randomUUID()
   user.name = loginInput.value
   user.color = getRamdomColor()
 
