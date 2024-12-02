@@ -79,12 +79,10 @@ const messageProcess = (evt)=>{
 
 
  if(useridd == user.id){
-  console.log(user.id)
   const selfreturn = createMessageSelf(usercontent)
    chatmensagens.appendChild(selfreturn)
   
  }else{
-   console.log("t")
    const otherreturn = createMessageOther(usercontent, usernamee, usercolorr)
    chatmensagens.appendChild(otherreturn)
  }
