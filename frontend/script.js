@@ -106,7 +106,7 @@ const SubmitFormLogin = (event) =>{
   chat.style.display = "flex"
 
 
-  ws = new WebSocket("ws://localhost:8080")
+  ws = new WebSocket("wss://chatonline-backend.onrender.com")
 
   ws.onmessage = messageProcess
 
