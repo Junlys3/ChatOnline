@@ -123,7 +123,7 @@ const sendservermessage = (event) =>{
     content:chatinput.value
   }
 
-   ws.onopen=()=>  ws.send(JSON.stringify(message))
+   ws.send(JSON.stringify(message))
 
 
 
