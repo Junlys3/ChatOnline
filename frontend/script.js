@@ -116,7 +116,6 @@ const SubmitFormLogin = (event) =>{
  
 const sendservermessage = (event) =>{
    event.preventDefault()
-   
   const message = {
     userid: user.id,
     userName: user.name,
@@ -124,8 +123,7 @@ const sendservermessage = (event) =>{
     content:chatinput.value
   }
 
-
-    ws.send(JSON.stringify(message))
+   ws.onopen=()=>  ws.send(JSON.stringify(message))
 
 
 
